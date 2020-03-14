@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/dashboard" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@drawable/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/maintxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginBottom="36dp"
+                    android:fontFamily="@font/regular"
+                    android:text="Dashboard"
+                    android:textColor="#fff"
+                    android:textSize="36sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/mainlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/transparent"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                           android:onClick="profile"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/items"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/profile"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Your Profile"
+                                android:textColor="@color/bcolorChooseblue"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:onClick="med"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/items"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/medication"/>
+
+
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Medication"
+
+                                android:textColor="@color/bcolorChooseblue"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/transparent"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                           android:onClick="pre"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/items"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/prevention"/>
+
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Prevention"
+
+                                android:textColor="@color/bcolorChooseblue"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:onClick="die"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/items"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/diet"/>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Diet details"
+                                android:textColor="@color/bcolorChooseblue"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/transparent"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                           android:onClick="his"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/items"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/history"/>
+
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Check-up\nHistory"
+
+                                android:textColor="@color/bcolorChooseblue"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:onClick="upcoming"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/items"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/upcoming"/>
+
+
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Upcoming\nCheckup"
+                                android:textColor="@color/bcolorChooseblue"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/transparent"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:onClick="re"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/items"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/require"/>
+
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="Check-up\nRequirements"
+                                android:textColor="@color/bcolorChooseblue"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:onClick="setting"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/items"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/setting"/>
+
+
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/regular"
+                                android:text="App\nSettings"
+                                android:textColor="@color/bcolorChooseblue"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
