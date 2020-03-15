@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Require">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/dashboard" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/maintxtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="36dp"
+                android:fontFamily="@font/regular"
+                android:text="Checkup Requirement"
+                android:textColor="#fff"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/items"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:elevation="6dp">
+    <Spinner
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/regular"
+        android:text="Do not eat or drink anything except water."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:layout_marginTop="24dp"/>
+    <TextView
+        android:fontFamily="@font/regular"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:visibility="gone"
+        android:text="To drink plenty of water "
+        android:id="@+id/b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:layout_marginTop="24dp"/>
+    <TextView
+        android:fontFamily="@font/regular"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:visibility="gone"
+        android:text="Avoid food, caffenie, tobacco and alcohol"
+        android:id="@+id/c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:layout_marginTop="24dp"/>
+            </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

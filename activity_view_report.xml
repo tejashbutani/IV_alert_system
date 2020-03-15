@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".View_report">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/dashboard" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/maintxtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/regular"
+        android:text="Medical report History"
+        android:textColor="#fff"
+        android:textSize="36sp" />
+
+
+    <ListView
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        android:visibility="visible"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/list"/>
+    <LinearLayout
+        android:id="@+id/rlay"
+        android:visibility="gone"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/items"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:elevation="6dp">
+        <TextView
+            android:fontFamily="@font/regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Information"
+            android:textColor="@color/bcolorChoosered"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/r1"
+            android:fontFamily="@font/regular"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="6dp"
+            android:text="Date: 27-2-2020"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/r2"
+            android:fontFamily="@font/regular"
+            android:textSize="18sp"
+            android:text="Report: Sugar Checkup"
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/r3"
+            android:fontFamily="@font/regular"
+            android:textSize="22sp"
+            android:text="Report Value: 140"
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginTop="24dp"/>
+        <TextView
+            android:id="@+id/r4"
+            android:fontFamily="@font/regular"
+            android:textSize="22sp"
+            android:text="Medication: Paracetamol"
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginTop="24dp"/>
+        <TextView
+            android:id="@+id/r5"
+            android:fontFamily="@font/regular"
+            android:textSize="22sp"
+            android:text="Prevention: NO sugar"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginTop="24dp"/>
+        <TextView
+            android:id="@+id/r6"
+            android:fontFamily="@font/regular"
+            android:textSize="22sp"
+            android:text="Diet Details: eat healthy"
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

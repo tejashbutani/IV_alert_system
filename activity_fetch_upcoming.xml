@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".FetchUpcoming">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/dashboard" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/maintxtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginBottom="36dp"
+                    android:fontFamily="@font/regular"
+                    android:text="Upcoming Check-ups"
+                    android:textColor="#fff"
+                    android:textSize="32sp" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/items"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:id="@+id/cntlay"
+                    android:elevation="6dp">
+                    <TextView
+                        android:fontFamily="@font/regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Information"
+                        android:textColor="@color/bcolorChoosered"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/na"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/regular"
+        android:text="Checkup Name: "
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/da"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/regular"
+        android:text="Checkup Date: "
+        android:textSize="18sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+                </LinearLayout>
+    <ProgressBar
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:id="@+id/ft_rng"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+
+</LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

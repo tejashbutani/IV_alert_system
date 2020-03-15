@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/dashboard" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/maintxtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginBottom="36dp"
+                    android:fontFamily="@font/regular"
+                    android:text="Settings"
+                    android:textColor="#fff"
+                    android:textSize="36sp" />
+                <Button
+                    android:onClick="add_medical_report"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add medical Report"
+                    android:elevation="6dp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="18sp"
+                    android:padding="18dp"
+                    android:textColor="@color/bcolorChooseblue"/>
+                <Button
+                    android:onClick="add_upcoming"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Upcoming report"
+                    android:elevation="6dp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="18sp"
+                    android:padding="18dp"
+                    android:textColor="@color/bcolorChooseblue"/>
+                   <Button
+                       android:onClick="logout"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginRight="16dp"
+                       android:layout_marginTop="8dp"
+                       android:layout_marginBottom="16dp"
+                       android:background="@drawable/button"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Logout"
+                       android:elevation="6dp"
+                       android:textAllCaps="false"
+                       android:fontFamily="@font/montserrat_bold"
+                       android:textSize="24sp"
+                       android:padding="16dp"
+                       android:textColor="#fff"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

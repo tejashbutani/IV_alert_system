@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lol"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:fontFamily="@font/regular"
+        android:textColor="@color/bcolorChooseblue"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:text="Welcome Back"/>
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/med"/>
+
+    <EditText
+        android:id="@+id/passedt"
+        android:fontFamily="@font/regular"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#000"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"/>
+
+    <Button
+        android:id="@+id/go"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="#fff"
+        android:background="@drawable/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:layout_below="@id/passedt"
+        />
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/lo_rng"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/stsii"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="@font/regular"
+        android:textColor="@color/bcolorChooseblue"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="User not exist"/>
+
+</LinearLayout>

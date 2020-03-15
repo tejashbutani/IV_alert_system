@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Add_Report">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/dashboard" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/maintxtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginBottom="36dp"
+                    android:fontFamily="@font/regular"
+                    android:text="Add Medical Report"
+                    android:textColor="#fff"
+                    android:textSize="36sp" />
+
+    <LinearLayout
+        android:elevation="6dp"
+        android:background="@drawable/items"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/rp_lay"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/regular"
+            android:text="Fill Information"
+            android:textColor="@color/bcolorChooseblue"
+            android:textSize="18sp" />
+
+    <EditText
+        android:fontFamily="@font/regular"
+        android:id="@+id/mob"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"/>
+    <EditText
+        android:fontFamily="@font/regular"
+        android:id="@+id/dat"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"/>
+
+    <EditText
+        android:fontFamily="@font/regular"
+        android:id="@+id/nam"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Checkup-name"/>
+    <EditText
+        android:inputType="number"
+        android:fontFamily="@font/regular"
+        android:id="@+id/param"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Checkup-Param"/>
+    <EditText
+        android:fontFamily="@font/regular"
+        android:id="@+id/medic"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Medication"/>
+    <EditText
+        android:fontFamily="@font/regular"
+        android:id="@+id/prevent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prevention"/>
+    <EditText
+        android:fontFamily="@font/regular"
+        android:id="@+id/diet"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Diet details"/>
+
+
+</LinearLayout>
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="hi"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/regular"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Add Medical Report"
+                    android:layout_height="50dp"/>
+
+                <Button
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="scan"
+                    android:background="@drawable/white"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/bcolorChoosered"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="100dp"
+                    android:text="Scan Medical Report"
+                    android:layout_height="50dp"/>
+                <EditText
+                    android:fontFamily="@font/regular"
+                    android:id="@+id/resultEt"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/imageiv"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"/>
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:id="@+id/rp_rng"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/rp_bnb"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="check.json"/>
+
+    <TextView
+        android:fontFamily="@font/regular"
+        android:id="@+id/rp_txt"
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Successfully submitted"
+        android:textColor="@color/bcolorChoosered"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="24sp" />
+
+
+</LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

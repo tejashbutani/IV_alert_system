@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainOptions">
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:id="@+id/red"
+        android:layout_height="match_parent"
+        android:background="@color/colorChooseblue" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:layout_toRightOf="@id/red"
+        android:layout_height="match_parent"
+        android:background="@color/colorChoosered" />
+
+
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/stethoscope"/>
+
+        <Button
+            android:onClick="login"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="180dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="6dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/regular"
+            android:text="I have an account"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:layout_marginTop="50dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"/>
+
+    <Button
+        android:onClick="signup"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="6dp"
+        android:fontFamily="@font/regular"
+        android:textAllCaps="false"
+        android:text="Create an account"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/blue"
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+    </RelativeLayout>
+</LinearLayout>
