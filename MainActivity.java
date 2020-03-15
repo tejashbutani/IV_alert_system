@@ -50,17 +50,65 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    public void addDetails(View view) {
-        startActivity(new Intent(this, AddDetails.class));
-    }
 
     public void profile(View view) {
 
         Intent intent=new Intent(this,Profile.class);
         intent.putExtra("mob",s_mob);
         startActivity(intent);
+        overridePendingTransition(R.anim.fade_in,R.anim.stay);
+    }
+
+    public void upcoming(View view) {
+        startActivity(new Intent(this, FetchUpcoming.class));
 
     }
 
+    public void re(View view) {
+        startActivity(new Intent(this, Require.class));
+    }
 
+    public void his(View view) {
+        SharedPreferences sharedPreferences = getSharedPreferences("key",
+                MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("rep", "his");
+        editor.commit();
+        startActivity(new Intent(this, View_report.class));
+    }
+
+    public void med(View view) {
+        SharedPreferences sharedPreferences = getSharedPreferences("key",
+                MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("rep", "med");
+        editor.commit();
+       startActivity(new Intent(this, View_report.class));
+    }
+    public void die(View view) {
+        SharedPreferences sharedPreferences = getSharedPreferences("key",
+                MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("rep", "die");
+        editor.commit();;
+     startActivity(new Intent(this, View_report.class));
+    }
+    public void pre(View view) {
+        SharedPreferences sharedPreferences = getSharedPreferences("key",
+                MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("rep", "pre");
+        editor.commit();
+       startActivity(new Intent(this, View_report.class));
+    }
+
+    public void setting(View view) {
+        finish();
+        startActivity(new Intent(this, Settings.class));
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
 }
